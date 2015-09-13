@@ -18,9 +18,10 @@ t <- dataTidy[grep("?", dataTidy),]
 dataTidy$Global_active_power <- as.numeric(dataTidy$Global_active_power)
 
 # Create the histogram plot
-windows(width = 480, height = 480)
+png("plot1.png", width = 480, height = 480)
+
 hist(dataTidy$Global_active_power, 
      col = "red", 
      xlab = "Global Active Power (kilowatts)", 
      main = "Global Active Power")
-
+dev.off()
