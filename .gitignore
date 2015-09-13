@@ -17,6 +17,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# In this case, ignore the data set
+*.txt
+
 # =========================
 # Operating System Files
 # =========================
